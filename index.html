@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <script type="module" defer async>
+      // Load Google Maps JavaScript API
+      function loadScript(url, callback) {
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = url;
+        script.onload = callback;
+        document.body.appendChild(script);
+      }
+
+      function initApp() {
+        // Render your app here after the Google Maps API is loaded
+        import('/src/main.tsx').then((module) => {
+          const App = module.default;
+          ReactDOM.render( document.getElementById('root'));
+        });
+      }
+
+      const apiKey = import.meta.env.VITE_GOOGLE_API_KEY;
+    //   console.log('apiKey from html', apiKey);
+      const googleMapsUrl = `https://maps.googleapis.com/maps/api/js?key=${apiKey}`;
+
+      loadScript(googleMapsUrl, () => {
+        console.log('Google Maps API loaded');
+      });
+    </script>
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <main id="root"></main>
+
+    <script type="module" src="/src/main.tsx"></script>
+    
+  </body>
+</html>
