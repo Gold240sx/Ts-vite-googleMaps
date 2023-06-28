@@ -1,7 +1,7 @@
 # Ts-vite-googleMaps
 
 ## Description
-This project is a refactorization of Maximilian Schwarzmüller's Google Maps application demo from his "Understanding TypeScript" course. Originally a vanilla Ts app, I rewrote this app in vite-react and by expressing the API keys as env variables, I ciuld then ensure that these env variables were not exposed in the browser.
+This project is a refactorization of Maximilian Schwarzmüller's Google Maps application demo from his "Understanding TypeScript" Udemy course. Originally a vanilla Ts app, I rewrote this app in vite-react and by expressing the API keys as env variables, I could then ensure that these env variables were not exposed in the browser.
 
 ## Tags
 - React 
