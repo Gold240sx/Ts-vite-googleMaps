@@ -14,6 +14,7 @@ This project is a refactorization of Maximilian Schwarzmüller's Google Maps app
 
 ## Project Info:
 Demo: https://ts-vite-google-maps.vercel.app
+
 Repo: https://github.com/Gold240sx/Ts-vite-googleMaps
 
 ## To get started on development:
